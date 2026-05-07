@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback de Qualidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <section class="card">
+      <h1 id="titulo">Bem-vindo ao sistema de feedback</h1>
+
+      <p class="descricao">
+        Avalie a velocidade da página de acordo com a sua experiência.
+      </p>
+
+      <form id="formFeedback">
+        <div class="campo">
+          <label for="nota">Velocidade da Página:</label>
+
+          <select id="nota" name="nota" required>
+            <option value="">Selecione uma nota</option>
+            <option value="1">1 - Muito lenta</option>
+            <option value="2">2 - Lenta</option>
+            <option value="3">3 - Razoável</option>
+            <option value="4">4 - Boa</option>
+            <option value="5">5 - Excelente</option>
+          </select>
+        </div>
+
+        <button 
+          type="submit" 
+          id="btnEnviar"
+          aria-label="Enviar avaliação da velocidade da página">
+          Enviar Avaliação
+        </button>
+      </form>
+
+      <p id="mensagem" class="mensagem"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -9,8 +9,8 @@ const titulo = document.getElementById("titulo");
 const nota = document.getElementById("nota");
 const mensagem = document.getElementById("mensagem");
 
-// URL fictícia fornecida no exercício
-const API_URL = "https://api.eventshub.mz/feedback";
+// URL verdadeira para simular envio de feedback
+const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
 // Evento de envio do formulário
 formFeedback.addEventListener("submit", async (event) => {
